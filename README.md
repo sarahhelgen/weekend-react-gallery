@@ -12,8 +12,8 @@ To Do List:
 
 [x] NPM install
 
-[] find some pictures
-- add properties to photos after oyu add them to gallery.data.js
+[x] find some pictures
+- add properties to photos after added to gallery.data.js
 
 []create HTML skeleton
 
