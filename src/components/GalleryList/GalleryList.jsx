@@ -1,10 +1,15 @@
 
-function GalleryList () {
+function GalleryList (props) {
 
 
-    
+
     return(
         <>
+        {
+            props.list.map(galleryItem =>
+              (<p>{galleryItem.path} {galleryItem.description}</p>))
+
+        }
         </>
 
 

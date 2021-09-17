@@ -15,8 +15,6 @@ To Do List:
 [x] find some pictures
 - add properties to photos after added to gallery.data.js
 
-[x]create HTML skeleton
-
 [x] create two components:
 - GalleryList
     - pass this component the data stored in App.jsx with props
@@ -31,14 +29,10 @@ To Do List:
 [] GET axios
 - goes in App.jsx
 
-[x] GET route
-- goes in gallery.router.js
 
 [] PUT axios
 - this will go in GalleryItem.jsx (I think)
 
-[x] PUT route
-- goes in gallery.router.js
 
 [ ] make sure to add code comments to describe what you're doing!
 
