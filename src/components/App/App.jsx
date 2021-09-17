@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList.jsx';
 import axios from 'axios';
-import {useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
@@ -13,30 +13,48 @@ function App() {
     axios({
       method: 'GET',
       url: '/gallery',
-    }).then((response) =>{
-      console.log('Response.data is', response.data );
+    }).then((response) => {
+      console.log('Response.data is', response.data);
       setGalleryList(response.data);
-    }).catch((error) =>{
-      console.log('Error with GET!', error );
+    }).catch((error) => {
+      console.log('Error with GET!', error);
       alert('Error making GET request.');
     });
   }//end getPhotos
+
+  const likePhotos = () => {
+    console.log('in likePhotos');
+    let galleryId = response.data.id;
+    console.log('galleryId is', galleryId);
+    axios({
+      method: 'PUT',
+      url: `/gallery/${galleryId}`,
+    }).then(function (response) {
+      console.log('Liking photo!');
+      getPhotos();
+    }).catch(function (error) {
+      console.log('error with PUT', error );
+      alert('you have an error with PUT!');
+    });
+
+
+  }//end likePhotos
 
   useEffect(() => {
     getPhotos();
   }, []);
 
-    return (
+  return (
 
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
-        <GalleryList galleryList = {galleryList}/>
-        
-      </div>
-      
-    );
+    <div className="App">
+      <header className="App-header">
+        <h1 className="App-title">Gallery of My Life</h1>
+      </header>
+      <GalleryList galleryList={galleryList} />
+
+    </div>
+
+  );
 }
 
 export default App;
