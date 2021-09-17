@@ -6,7 +6,9 @@ function GalleryList({galleryList}) {
     return (
         <>
             <p>Gallery goes here</p>
-            {galleryList.map(galleryListItem => (<img src={galleryListItem.path}></img>))}
+            {galleryList.map(galleryListItem => (<div><img src={galleryListItem.path}></img><button>Like!</button></div>
+            
+            ))}
         </>
 
 
