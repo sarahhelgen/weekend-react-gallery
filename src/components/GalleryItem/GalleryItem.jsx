@@ -1,12 +1,14 @@
 import {useState} from 'react';
 
-function GalleryItem({ galleryItem }, { likePhotos }) {
+function GalleryItem({ galleryItem , likePhotos }) {
 
     const [viewPhoto, setViewPhoto ] = useState(true);
+    const [likes, setLikes ] = useState(0);
 
     const handleLike = (galleryId) => {
         console.log('in handleLike');
         likePhotos(galleryId);
+        setLikes(likes + 1);
     }//end handleLike
 
     const handlePhotoToggle = () => {
@@ -28,7 +30,7 @@ function GalleryItem({ galleryItem }, { likePhotos }) {
             <button onClick={() => handleLike(galleryItem.id)}>Like!</button>
             <button onClick={() => handlePhotoToggle() }>Description</button>
             {viewPhoto ? (<img src={galleryItem.path} />) : ( <p>{galleryItem.description}</p>)}
-            Likes:
+            <div>Likes: {likes} </div>
 
 
         </>
