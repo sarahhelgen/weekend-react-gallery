@@ -13,7 +13,7 @@ function GalleryItem({ galleryItem , likePhotos }) {
 
     const handlePhotoToggle = () => {
         console.log('in handlePhotoToggle');
-        setViewPhoto(!viewPhoto);
+        // setViewPhoto(viewPhoto);
     }//end handlePhotoToggle
 
 
@@ -28,8 +28,8 @@ function GalleryItem({ galleryItem , likePhotos }) {
 
             <div><img src={galleryItem.path}></img></div>
             <button onClick={() => handleLike(galleryItem.id)}>Like!</button>
-            <button onClick={() => handlePhotoToggle() }>Description</button>
-            {viewPhoto ? (<img src={galleryItem.path} />) : ( <p>{galleryItem.description}</p>)}
+            {/* <button onClick={() => handlePhotoToggle() }>Description</button>
+            {viewPhoto ? (<img src={galleryItem.path} />) : ( <p>{galleryItem.description}</p>)} */}
             <div>Likes: {likes} </div>
 
 

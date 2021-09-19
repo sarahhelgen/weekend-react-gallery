@@ -10,6 +10,7 @@ const galleryItems = [
     { id: 10, path: 'images/montreal.jpg', description: 'Out with lady friends in Montreal.', likes: 0},
     { id: 11, path: 'images/potty.jpg', description: 'Even Welsh guards have to go to the bathroom.', likes: 0},
     { id: 12, path: 'images/sanfran.jpg', description: 'Golden Gate Bridge with my sister.', likes: 0},
+    { id: 13, path: '/images/bruce.jpg', description: 'Bruce concert with Dad and Anna!', likes: 0},
 ];
 
 module.exports = galleryItems;
