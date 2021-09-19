@@ -13,7 +13,7 @@ I created the following to do list to make this app:
 - [x] find some pictures
     - [x] add properties to photos and resize after added to gallery.data.js
 
-[x] create two components:
+- [x] create two components:
 -  [x] GalleryList
     - [x] pass this component the data stored in App.jsx with props 
     - [x] loop over/map the gallery data items 

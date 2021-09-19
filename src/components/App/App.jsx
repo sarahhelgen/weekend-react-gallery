@@ -48,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Gallery of My Life</h1>
+        <h1 className="App-title">Sarah's Photo Gallery</h1>
       </header>
       {/* passing props down to GalleryList */}
       <GalleryList key={galleryList.id} galleryList={galleryList} likePhotos={likePhotos} /> 
