@@ -24,18 +24,18 @@ I created the following to do list to make this app:
     - [x] on click of like button, use axios put to update the like count `/gallery/like/:id` [
     - [x] display the likes on the page 
 
-[x] axios GET request
+- [x] axios GET request
 - goes in App.jsx
 
 
-[x] axios PUT request
+- [x] axios PUT request
 - goes in App.jsx
 
-[x] update readme
+- [x] update readme
 
-[x] make sure to add code comments to describe what you're doing!
+- [x] make sure to add code comments to describe what you're doing!
 
 Stretch Goals if time:
 
-[] move gallery data into a database
-[] use material UI for CSS 
+- [] move gallery data into a database
+- [] use material UI for CSS 
