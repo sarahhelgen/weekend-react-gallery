@@ -1,18 +1,20 @@
+import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
-function GalleryList({galleryList}) {
+
+function GalleryList({galleryList},{likePhotos}) {
 
 
 
     return (
         <>
             <p>Gallery goes here</p>
-            {galleryList.map(galleryListItem => (<div><img src={galleryListItem.path}></img><button>Like!</button></div>
-            
+            {galleryList.map(galleryItem => (
+                <GalleryItem galleryItem={galleryItem}/>
             ))}
         </>
 
 
-    )//end return <
+    )//end return 
 }//end GalleryList
 
 export default GalleryList;

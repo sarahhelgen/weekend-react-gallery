@@ -1,11 +1,12 @@
 
 
-function GalleryItem () {
+function GalleryItem ({galleryItem}) {
 
 
     return(
         <>
-
+        <div><img src={galleryItem.path}></img><button>Like!</button></div>
+            
         
         </>
 

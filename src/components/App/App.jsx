@@ -22,13 +22,13 @@ function App() {
     });
   }//end getPhotos
 
-  const likePhotos = () => {
+  const likePhotos = (galleryId) => {
     console.log('in likePhotos');
-    let galleryId = response.data.id;
+    
     console.log('galleryId is', galleryId);
     axios({
       method: 'PUT',
-      url: `/gallery/${galleryId}`,
+      url: `/gallery/like/${galleryId}`,
     }).then(function (response) {
       console.log('Liking photo!');
       getPhotos();
@@ -50,7 +50,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList galleryList={galleryList} />
+      <GalleryList galleryList={galleryList} likePhotos={likePhotos}/>
 
     </div>
 

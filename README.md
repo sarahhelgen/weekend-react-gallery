@@ -20,10 +20,10 @@ To Do List:
     - pass this component the data stored in App.jsx with props [x]
     - loop over/map the gallery data items [x]
 - GalleryItem
-    - images should be displayed in this component
+    - images should be displayed in this component [x]
     - use conditional rendering to swap the image with the description on the page
-    - append a like button for each image
-    - on click of like button, use axios put to update the like count `/gallery/like/:id`
+    - append a like button for each image [x]
+    - on click of like button, use axios put to update the like count `/gallery/like/:id` 
     - display the likes on the page
 
 [x] GET axios
