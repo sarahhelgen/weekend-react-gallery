@@ -30,8 +30,9 @@ To Do List:
 - goes in App.jsx
 
 
-[] PUT axios
-- this will go in GalleryItem.jsx (I think)
+[x] PUT axios
+- goes in App.jsx
+
 
 
 [ ] make sure to add code comments to describe what you're doing!

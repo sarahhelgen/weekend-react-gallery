@@ -1,7 +1,7 @@
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
 
-function GalleryList({galleryList},{likePhotos}) {
+function GalleryList({ galleryList }, { likePhotos }) {
 
 
 
@@ -9,7 +9,7 @@ function GalleryList({galleryList},{likePhotos}) {
         <>
             <p>Gallery goes here</p>
             {galleryList.map(galleryItem => (
-                <GalleryItem galleryItem={galleryItem}/>
+                <GalleryItem key={galleryList.id} galleryItem={galleryItem} likePhotos={likePhotos} />
             ))}
         </>
 

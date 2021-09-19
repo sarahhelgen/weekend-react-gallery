@@ -24,7 +24,6 @@ function App() {
 
   const likePhotos = (galleryId) => {
     console.log('in likePhotos');
-    
     console.log('galleryId is', galleryId);
     axios({
       method: 'PUT',
@@ -33,7 +32,7 @@ function App() {
       console.log('Liking photo!');
       getPhotos();
     }).catch(function (error) {
-      console.log('error with PUT', error );
+      console.log('error with PUT', error);
       alert('you have an error with PUT!');
     });
 
@@ -50,7 +49,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList galleryList={galleryList} likePhotos={likePhotos}/>
+      <GalleryList key={galleryList.id} galleryList={galleryList} likePhotos={likePhotos} />
 
     </div>
 
