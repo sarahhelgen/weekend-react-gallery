@@ -16,6 +16,7 @@ function App() {
       url: '/gallery',
     }).then((response) => {
       console.log('Response.data is', response.data);
+      //updating local state here - this will re-render App.jsx
       setGalleryList(response.data); //using the setGalleryList function from useState to the response from the server
     }).catch((error) => { //catch any errors
       console.log('Error with GET!', error);
