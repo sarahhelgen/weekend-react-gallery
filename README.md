@@ -34,11 +34,11 @@ I created and executed the following to do list to make this app:
 
 - make sure to add code comments to describe what you're doing!
 
-The deployed app can be found here: (ADD ONCE DEPLOYED)
 
 
-## Screen Shots
-Add screen shots
+
+## Screen Shot
+![app image](./wireframes/gallery-screenshot.png)
 
 ## Built with:
 
