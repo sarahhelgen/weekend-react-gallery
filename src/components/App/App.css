@@ -3,7 +3,8 @@
 }
 
 .App-header {
-  background-color: #222;
+  font-family: 'Amatic SC';
+  background-color: #253D5B;
   padding: 1em;
   color: white;
   margin-bottom: 1em;
@@ -14,6 +15,10 @@
 }
 
 .gallery-item {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  background-color: #CFCECA;
 }

@@ -1,4 +1,6 @@
 import {useState} from 'react';
+import Box from '@mui/material/Box';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 
 function GalleryItem({ galleryItem , likePhotos }) { //passing props down to galleryItem
 
@@ -14,14 +16,15 @@ function GalleryItem({ galleryItem , likePhotos }) { //passing props down to gal
 
 
     return (
-        <div className="photo-info">
+        <Box sx={{ display: 'inline-flex', flexDirection:'row', flexWrap: 'wrap', justifyContent: 'center'}}>
+        <div className="container">
             {/* using ternary operator to toggle between photo and photo description after a user clicks on the photo. */}
             {togglePhoto ? (<img className="gallery-item" src={galleryItem.path} onClick={() => setTogglePhoto(false)}/>) : 
             (<p onClick={() => setTogglePhoto(true)}> {galleryItem.description}</p>)}
-            <button onClick={() => handleLike(galleryItem.id)}>Like!</button>
+            <ThumbUpIcon onClick={() => handleLike(galleryItem.id)} />
             <div>Likes: {likes} </div>
-        
         </div>
+        </Box>
     )//end return
 }//end GalleryItem
 
